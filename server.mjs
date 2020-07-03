@@ -13,10 +13,8 @@ dotenv.config();
 const postgres = knex({
     client: 'pg',
     connection: {
-        host: '127.0.0.1',
-        user: process.env.USER,
-        password: process.env.PASS,
-        database: 'smart-brain',
+        connectionString: process.env.DATABASE_URL,
+        ssl: true,
     },
 });
 
