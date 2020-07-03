@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.cjs",
   "scripts": {
-      "start": "node server.mjs",
+      "start": "node --experimental-modules server.mjs",
       "start:dev": "nodemon server.mjs"
   },
   "author": "",
