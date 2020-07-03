@@ -1,9 +1,9 @@
 import Clarifai from 'clarifai';
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
-// dotenv.config();
+dotenv.config();
 
-require('dotenv').config();
+// require('dotenv').config();
 
 const app = new Clarifai.App({
     apiKey: '6e58104673d1490e8d67f9da0f283cd3'

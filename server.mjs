@@ -6,9 +6,9 @@ import handleRegister from './controllers/register.mjs';
 import handleSignin from './controllers/signin.mjs';
 import handleProfile from './controllers/profile.mjs';
 import {handleImage, handleImageUrl} from './controllers/image.mjs';
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
-require('dotenv').config();
+dotenv.config();
 
 const postgres = knex({
     client: 'pg',
