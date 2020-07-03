@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 
-// app.get('/', (req, res) => res.json(database.users));
+app.get("/", (req, res) => res.send("it's working!"));
 
 app.post('/signin', handleSignin(postgres, bcrypt));
 
@@ -38,4 +38,6 @@ app.put('/image', handleImage(postgres));
 
 app.post('/imageurl', handleImageUrl);
 
-app.listen(process.env.PORT, () => console.log(`App is running on ${process.env.PORT}`));
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`app is running on port ${process.env.PORT}`);
+});
