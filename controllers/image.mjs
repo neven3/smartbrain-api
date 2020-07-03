@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = new Clarifai.App({
-    apiKey: '6e58104673d1490e8d67f9da0f283cd3'
+    apiKey: process.env.CLARIFAI_KEY
 });
 
 const handleImageUrl = (req, res) => {
