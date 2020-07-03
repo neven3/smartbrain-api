@@ -38,4 +38,4 @@ app.put('/image', handleImage(postgres));
 
 app.post('/imageurl', handleImageUrl);
 
-app.listen(3000, () => console.log('App is running on 3000'));
+app.listen(process.env.PORT, () => console.log(`App is running on ${process.env.PORT}`));
