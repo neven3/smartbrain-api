@@ -1,11 +1,11 @@
 {
   "name": "smartbrain-api",
   "engines": {
-    "node": "12.16.3"
+    "node": "12.16.2"
   },
   "version": "1.0.0",
   "description": "",
-  "main": "server.mjs",
+  "main": "index.js",
   "scripts": {
       "start": "node server.mjs",
       "start:dev": "nodemon server.mjs"
