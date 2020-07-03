@@ -6,7 +6,7 @@ import Clarifai from 'clarifai';
 require('dotenv').config();
 
 const app = new Clarifai.App({
-    apiKey: process.env.CLARIFAI_KEY
+    apiKey: '6e58104673d1490e8d67f9da0f283cd3'
 });
 
 const handleImageUrl = (req, res) => {
